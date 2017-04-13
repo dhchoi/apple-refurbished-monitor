@@ -1,0 +1,24 @@
+{
+  "name": "apple-refurbished-monitor",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A script for periodically monitoring Apple's refurbished products page",
+  "main": "main.js",
+  "scripts": {
+    "start": "NODE_ENV=production node main",
+    "start-debug": "NODE_ENV=development DEBUG=app:* node main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy Choi <andy.dh.choi@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 7.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "cheerio": "^0.22.0",
+    "debug": "^2.6.3",
+    "node-schedule": "^1.2.1",
+    "nodemailer": "^4.0.0"
+  }
+}
